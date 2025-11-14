@@ -1,30 +1,35 @@
-<html>
-    <head>
-        <title>Valentes site</title>
-        <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Valente's site</title>
   <style>
     body {
-      font-family: 'comic sans ms', cursive;
-      background-color:antiquewhite;
+      font-family: 'Comic Sans MS', cursive;
+      background-color: antiquewhite;
     }
   </style>
 </head>
-  <body>
-      <h1>Welcome to my website! :)</h1>
-      <h2 >All about Valente a autistic, coputer programer </h2>
-      <p>Hello I am Valente! I enjoy prgraming, science, aeronautics, and physcology! This website has some of my code, my blog (Sorry if its not updated I'm busy)</p>
-      <script>
-        const sound = new Audio('buttonsound.mp3');
-        </script>
-        <h3> Where to go 😊</h3>
-        <ul>
-          <li><a href="blog.html">My Blog</a></li>
-          <li><a href="https://valente2.github.io/My-site/code.html">My Code</a></li>
-          <li><a href="about.html">About Me</a></li>
-        </ul>
-        <button onclick="
-          sound.play();
-          alert ('Thanks for visiting my site!');" >Click me! </button>
+<body>
+  <h1>Welcome to my website! :)</h1>
+  <h2>All about Valente — an autistic, computer programmer</h2>
+  <p>Hello, I am Valente! I enjoy programming, science, aeronautics, and psychology. This website has some of my code and my blog.</p>
 
-      </body>
+  <h3> Where to go 😊</h3>
+  <ul>
+    <li><a href="blog.html">My Blog</a></li>
+    <li><a href="code.html">My Code</a></li>
+    <li><a href="about.html">About Me</a></li>
+  </ul>
+
+  <button id="greetBtn">Click me!</button>
+
+  <script>
+    const sound = new Audio('buttonsound.mp3');
+    document.getElementById('greetBtn').addEventListener('click', () => {
+      sound.play().catch(()=>{}); // ignore play errors if file missing or blocked
+      alert('Thanks for visiting my site!');
+    });
+  </script>
+</body>
 </html>
