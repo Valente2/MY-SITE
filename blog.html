@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const button = document.getElementsByName("soundBtn")[0];
+            button.addEventListener("click", function() {
+                const audio = new Audio('button2sound.mp3');
+                audio.play();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+        <h2>Last blog November 28th 2025</h2>
+    </header>
+    <main>
+        <article>
+            <h2>More About Me</h2>
+            <p>Hello, someone reading. If you didn't know alredy this is about me, (yes very main charciter ahh). I mainly use this space for storing my ideas and other things for personal use. So today I would like to annouce something very big for this site <br> <br>I am adding my own photography portfolio! 😊 </p>
+            <p><br>I should have it ready by New Years Eve with my Chirstmas 2025 photo almbum. With photos of objects, parties and decorations</p>
+        </article>
+        <article>
+            <h2>(PAST 14/11/25)My First Blog Post</h2>
+            <p>Hello, someone reading. If you didn't know alredy this is about me, this is my space to let my fellings out knowing no one else will know. </p>
+            <p> Today I want to share my thoughts on my life. </p>
+            <p> It is ok, I think my life is boring but eventful fun and sad. Whatever you  want to call it life is life (la la la la la )</p>
+            <p> Thank you for reading my blog. I want to tell someone some things and as always 01010110 01000111 01000110 01110101 01011010 00110010 00111000 01100111 01010110 01101101 01101100 01101010 01100100 01000111 00111001 01111001 01001001 01000110 01010110 01110101 01100001 01010111 01011010 01110110 01100011 01101101 00110000 01100111 01010011 01000111 00111001 00110000 01011010 01010111 01110111 01100111 01001011 01001000 01001110 01110111 01011001 01010111 01001110 01101100 01001011 01010011 01000010 01010001 01011001 01011000 01000010 01101000 01001001 01000110 01001110 01110000 01011010 01011000 01001010 01111001 01011001 01010011 01000010 01000111 00001101 00001010 01100010 00110011 01101000 00110000 01100011 01101101 00111001 00110000 ! </p>
+
+        </article>
+    </main>
+    <button name = "soundBtn" >WOW you made it!</button>
+     <script>
+    const sound = new Audio('button2sound.mp3');
+    document.getElementById('soundBtn').addEventListener('click', () => {
+      sound.play().catch(()=>{}); // ignore play errors if file missing or blocked
+      alert('Thanks for visiting my site!');
+    });
+  </script>
+</body>
+</html>
